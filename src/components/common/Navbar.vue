@@ -1,10 +1,19 @@
 <script setup>
 import { ref } from "vue";
 
-
 const isOpen = ref(false);
+
 const toggleMenu = () => {
   isOpen.value = !isOpen.value;
+};
+
+// 🔥 SCROLL FUNCTION (FIX UTAMA)
+const scrollTo = (id) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+    isOpen.value = false; // auto close mobile
+  }
 };
 </script>
 
@@ -19,37 +28,38 @@ const toggleMenu = () => {
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex space-x-6">
-        <a href="#hero" class="relative hover:text-blue-400 transition
-          after:content-[''] after:absolute after:left-0 after:-bottom-1
-          after:h-[2px] after:w-0 after:bg-blue-400
-          after:transition-all after:duration-300
-          hover:after:w-full">
-          Home
-        </a>
+         <button @click="scrollTo('hero')" class="relative hover:text-blue-400 transition
+            after:content-[''] after:absolute after:left-0 after:-bottom-1
+            after:h-[2px] after:w-0 after:bg-blue-400
+            after:transition-all after:duration-300
+            hover:after:w-full">
+            Home
+          </button>
 
-        <a href="#about" class="relative hover:text-blue-400 transition
-          after:content-[''] after:absolute after:left-0 after:-bottom-1
-          after:h-[2px] after:w-0 after:bg-blue-400
-          after:transition-all after:duration-300
-          hover:after:w-full">
-          About
-        </a>
+          <button @click="scrollTo('about')" class="relative hover:text-blue-400 transition
+            after:content-[''] after:absolute after:left-0 after:-bottom-1
+            after:h-[2px] after:w-0 after:bg-blue-400
+            after:transition-all after:duration-300
+            hover:after:w-full">
+            About
+          </button>
 
-        <a href="#projects" class="relative hover:text-blue-400 transition
-          after:content-[''] after:absolute after:left-0 after:-bottom-1
-          after:h-[2px] after:w-0 after:bg-blue-400
-          after:transition-all after:duration-300
-          hover:after:w-full">
-          Projects
-        </a>
+          <button @click="scrollTo('projects')" class="relative hover:text-blue-400 transition
+            after:content-[''] after:absolute after:left-0 after:-bottom-1
+            after:h-[2px] after:w-0 after:bg-blue-400
+            after:transition-all after:duration-300
+            hover:after:w-full">
+            Projects
+          </button>
 
-        <a href="#contact" class="relative hover:text-blue-400 transition
-          after:content-[''] after:absolute after:left-0 after:-bottom-1
-          after:h-[2px] after:w-0 after:bg-blue-400
-          after:transition-all after:duration-300
-          hover:after:w-full">
-          Contact
-        </a>
+          <button @click="scrollTo('contact')" class="relative hover:text-blue-400 transition
+            after:content-[''] after:absolute after:left-0 after:-bottom-1
+            after:h-[2px] after:w-0 after:bg-blue-400
+            after:transition-all after:duration-300
+            hover:after:w-full">
+            Contact
+          </button>
+
         </div>
 
         <!-- Right Section -->
@@ -90,10 +100,10 @@ const toggleMenu = () => {
     <!-- Mobile Menu -->
      <Transition name="mobile">
     <div v-if="isOpen" class="md:hidden px-4 pb-4 space-y-2 m-4 rounded-2xl bg-gray-800">
-      <a href="#hero" class="block py-2">Home</a>
-      <a href="#about" class="block py-2">About</a>
-      <a href="#projects" class="block py-2">Projects</a>
-      <a href="#contact" class="block py-2">Contact</a>
+        <button @click="scrollTo('hero')" class="block py-2 w-full text-left">Home</button>
+        <button @click="scrollTo('about')" class="block py-2 w-full text-left">About</button>
+        <button @click="scrollTo('projects')" class="block py-2 w-full text-left">Projects</button>
+        <button @click="scrollTo('contact')" class="block py-2 w-full text-left">Contact</button>
     </div>
     </Transition>
   </nav>

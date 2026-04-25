@@ -1,3 +1,11 @@
+<script setup>
+const scrollTo = (id) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
+</script>
 <template>
   <footer class="pt-16 pb-8 px-6 border-t border-white/10">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
@@ -14,21 +22,28 @@
       <div>
         <h3 class="text-lg font-semibold mb-4">Navigation</h3>
         <ul class="space-y-2 text-gray-400">
-          <li>
-            <a href="#hero" class="hover:text-blue-400 transition">Home</a>
+                <li>
+            <button @click="scrollTo('hero')" class="hover:text-blue-400 transition">
+              Home
+            </button>
           </li>
+
           <li>
-            <a href="#about" class="hover:text-blue-400 transition">About</a>
+            <button @click="scrollTo('about')" class="hover:text-blue-400 transition">
+              About
+            </button>
           </li>
+
           <li>
-            <a href="#projects" class="hover:text-blue-400 transition"
-              >Projects</a
-            >
+            <button @click="scrollTo('projects')" class="hover:text-blue-400 transition">
+              Projects
+            </button>
           </li>
+
           <li>
-            <a href="#contact" class="hover:text-blue-400 transition"
-              >Contact</a
-            >
+            <button @click="scrollTo('contact')" class="hover:text-blue-400 transition">
+              Contact
+            </button>
           </li>
         </ul>
       </div>
