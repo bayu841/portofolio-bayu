@@ -100,7 +100,7 @@ const scrollToAbout = () => {
 
         <!-- TILTED CARD -->
         <TiltedCard
-          image-src="/images/heroimage.webp"
+          image-src="images/heroimage.webp"
           alt-text="Bayu Profile"
           caption-text="Progammer Pemula🗿"
           container-height="420px"

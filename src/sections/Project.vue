@@ -5,19 +5,19 @@ const activeTab = ref("projects");
 
 // DATA PROJECT
 const projects = [
-  { title: "Zona Coding - Academy (UI)", desc: "Vue.js", image: "/images/project/project1.webp" },
-  { title: "Perpustakaan Digital", desc: "Laravel", image: "/images/project/project2.webp" },
-  { title: "Manajemen Toko", desc: "Laravel", image: "/images/project/project3.webp" },
-  { title: "E-Commerce Taman (Figma)", desc: "Figma", image: "/images/project/project4.webp" },
-  { title: "SI RATU (Persuratan Terpadu)", desc: "Figma + Vue.js", image: "/images/project/project5.webp" },
+  { title: "Zona Coding - Academy (UI)", desc: "Vue.js", image: "images/project/project1.webp" },
+  { title: "Perpustakaan Digital", desc: "Laravel", image: "images/project/project2.webp" },
+  { title: "Manajemen Toko", desc: "Laravel", image: "images/project/project3.webp" },
+  { title: "E-Commerce Taman (Figma)", desc: "Figma", image: "images/project/project4.webp" },
+  { title: "SI RATU (Persuratan Terpadu)", desc: "Figma + Vue.js", image: "images/project/project5.webp" },
 ];
 
 // DATA CERTIFICATE
 const certificates = [
-  { image: "/images/cert1.webp" },
-  { image: "/images/cert2.webp" },
-  { image: "/images/cert3.webp" },
-  { image: "/images/cert4.webp" },
+  { image: "images/cert1.webp" },
+  { image: "images/cert2.webp" },
+  { image: "images/cert3.webp" },
+  { image: "images/cert4.webp" },
 ];
 
 // DATA SKILLS
