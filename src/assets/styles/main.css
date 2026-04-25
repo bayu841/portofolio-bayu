@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.section-animate {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.section-animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 3s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.categories-gradient {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  background-size: 200% 200%;
+  animation: gradientMove 3s ease infinite;
+  border-radius: 8px;
+}
+.button-gradient {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  background-size: 200% 200%;
+  border-radius: 8px;
+}
+
+.pop-enter-active,
+.pop-leave-active {
+  transition: all 0.35s ease;
+}
+
+.pop-enter-from {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+.pop-leave-to {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+/* ENTER */
+.mobile-enter-active,
+.mobile-leave-active {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* MASUK */
+.mobile-enter-from {
+  opacity: 0;
+  transform: translateY(-15px);
+}
+
+/* SELESAI MASUK */
+.mobile-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* KELUAR */
+.mobile-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SELESAI KELUAR */
+.mobile-leave-to {
+  opacity: 0;
+  transform: translateY(-15px);
+}
