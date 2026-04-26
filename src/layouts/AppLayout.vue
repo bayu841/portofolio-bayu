@@ -62,11 +62,24 @@ const prevSong = () => {
 
 const playAfterChange = () => {
   isPlaying.value = false;
-  setTimeout(() => {
-    audio.value.play();
-    isPlaying.value = true;
-  }, 100);
+
+  setTimeout(async () => {
+    if (audio.value) {
+      try {
+        audio.value.load(); 
+        await audio.value.play();
+        isPlaying.value = true;
+      } catch (err) {
+        console.log("Play error:", err);
+      }
+    }
+  }, 150);
 };
+onMounted(() => {
+  if (audio.value) {
+    audio.value.volume = 1; 
+  }
+});
 </script>
 
 <template>
@@ -136,7 +149,11 @@ const playAfterChange = () => {
         </button>
       </div>
     </Transition>
-    <audio ref="audio" :src="songs[currentIndex].src"></audio>
+    <audio
+      ref="audio"
+      :key="currentIndex"
+      :src="songs[currentIndex].src"
+    ></audio>
 </div>
 </template>
 
