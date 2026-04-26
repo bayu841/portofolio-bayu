@@ -89,23 +89,35 @@ onMounted(() => {
     </div>
 
     <!-- TAB MENU -->
-    <div class="flex justify-center mb-10">
-      <div class="bg-gray-900/60 p-2 rounded-xl flex gap-2 backdrop-blur">
+        <div class="flex justify-center mb-10 px-4 sm:px-0">
+        <div class="bg-gray-900/60 p-2 rounded-xl flex gap-2 sm:gap-3 backdrop-blur">
 
-        <button @click="activeTab = 'projects'" :class="tabClass('projects')">
-          Projects
-        </button>
+          <button 
+            @click="activeTab = 'projects'" 
+            :class="tabClass('projects')"
+            class="px-3 py-1.5 sm:px-4 sm:py-2"
+          >
+            Projects
+          </button>
 
-        <button @click="activeTab = 'certificates'" :class="tabClass('certificates')">
-          Certificates
-        </button>
+          <button 
+            @click="activeTab = 'certificates'" 
+            :class="tabClass('certificates')"
+            class="px-3 py-1.5 sm:px-4 sm:py-2"
+          >
+            Certificates
+          </button>
 
-        <button @click="activeTab = 'skills'" :class="tabClass('skills')">
-          Skills
-        </button>
+          <button 
+            @click="activeTab = 'skills'" 
+            :class="tabClass('skills')"
+            class="px-3 py-1.5 sm:px-4 sm:py-2"
+          >
+            Skills
+          </button>
 
+        </div>
       </div>
-    </div>
 
     <!-- CONTENT -->
     <div class="max-w-6xl mx-auto">
