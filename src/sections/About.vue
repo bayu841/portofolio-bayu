@@ -5,9 +5,6 @@ import profile from "../assets/images/profile.webp";
 import pattern from "../assets/images/iconpattern.webp";
 import grain from "../assets/images/grain.webp";
 
-const handleContactClick = () => {
-  console.log("Contact button clicked!");
-};
 
 const isMobile = ref(false);
 
@@ -36,6 +33,10 @@ onMounted(() => {
     observer.observe(sectionRef.value);
   }
 });
+const scrollToContact = () => {
+  const el = document.getElementById("contact");
+  if (el) el.scrollIntoView({ behavior: "smooth" });
+};
 </script>
 
 <template>
@@ -57,10 +58,10 @@ onMounted(() => {
       <div class="flex justify-center">
         <ProfileCard
           name="Bayu"
-          title="Frontend Developer"
+          title="Frontend Enthusiast"
           handle="bayu_a"
           status="Online"
-          contact-text="Hubungi Saya"
+          contact-text="Hi Everyone!🙌"
           :avatar-url="profile"
           :icon-url="pattern"
           :grain-url="grain"
@@ -96,7 +97,7 @@ onMounted(() => {
           <span
             class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-xs md:text-sm"
           >
-            1+ Pengalaman
+            <1 Tahun Pengalaman
           </span>
           <span
             class="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-xs md:text-sm"
@@ -117,7 +118,7 @@ onMounted(() => {
 
         <!-- BUTTON -->
         <button
-          @click="handleContactClick"
+          @click="scrollToContact"
           class="button-gradient px-5 md:px-6 py-2.5 md:py-3 rounded-lg text-sm md:text-base font-semibold transition"
         >
           Hubungi Saya

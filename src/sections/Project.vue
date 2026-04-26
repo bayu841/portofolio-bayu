@@ -73,7 +73,7 @@ onMounted(() => {
     ]"
   >
     <!-- TITLE -->
-    <div class="text-center mb-12">
+    <div class="text-center mb-10">
       <h1 class="text-4xl font-bold mb-2 text-gradient">Portfolio & Karya</h1>
       <p class="text-gray-400 max-w-xl mx-auto">
         Jelajahi proyek, sertifikat, dan keterampilan teknis saya.
@@ -81,7 +81,7 @@ onMounted(() => {
     </div>
 
     <!-- TAB MENU -->
-    <div class="flex justify-center mb-10 px-4 sm:px-0">
+    <div class="flex justify-center mb-10  px-4 sm:px-0">
       <div
         class="bg-gray-900/60 p-2 rounded-xl flex gap-1 sm:gap-1 backdrop-blur"
       >

@@ -4,8 +4,8 @@ import { ref, onMounted } from "vue";
 
 const texts = [
   "Bayu Ardiansyah",
-  "Frontend Developer",
-  "UI Designer"
+  "Fresh Graduate",
+  "Frontend Enthusiast"
 ];
 
 const typedText = ref("");
@@ -91,7 +91,7 @@ const scrollToContact = () => {
              @click="scrollToContact"
             class="border border-gray-600 hover:border-white px-6 py-3 rounded-lg transition"
           >
-            Kontak
+            Download CV
           </button>
         </div>
       </div>
