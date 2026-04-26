@@ -94,22 +94,22 @@ const scrollTo = (id) => {
         class="md:hidden px-4 pb-4 space-y-2 m-4 rounded-2xl bg-gray-800"
       >
         <button @click="scrollTo('hero')" class="block py-2 w-full text-left">
-          Home
+          Beranda
         </button>
         <button @click="scrollTo('about')" class="block py-2 w-full text-left">
-          About
+          Tentang
         </button>
         <button
           @click="scrollTo('projects')"
           class="block py-2 w-full text-left"
         >
-          Projects
+          Projek
         </button>
         <button
           @click="scrollTo('contact')"
           class="block py-2 w-full text-left"
         >
-          Contact
+          Kontak
         </button>
       </div>
     </Transition>
