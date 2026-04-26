@@ -22,8 +22,8 @@ onBeforeUnmount(() => {
 const isOpen = ref(false);
 
 const songs = [
-  { title: "Music 1", src: "public/music/lagu1.mp3" },
-  { title: "Music 2", src: "public/music/lagu2.mp3" },
+  { title: "Music 1", src: import.meta.env.BASE_URL + "public/music/lagu1.mp3" },
+  { title: "Music 2", src: import.meta.env.BASE_URL + "public/music/lagu2.mp3" },
 ];
 
 const currentIndex = ref(0);
