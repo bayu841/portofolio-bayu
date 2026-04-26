@@ -10,7 +10,7 @@ const scrollTo = (id) => {
   <footer class="pt-16 pb-8 px-6 border-t border-white/10">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
       <!-- LOGO / ABOUT -->
-      <div class="cursor-target">
+      <div>
         <h2 class="text-2xl font-bold text-gradient">@Bayu_A</h2>
         <p class="text-gray-400 mt-3 text-sm">
            Memiliki minat dalam pengembangan website dengan 
@@ -19,7 +19,7 @@ const scrollTo = (id) => {
       </div>
 
       <!-- NAVIGATION -->
-      <div class="cursor-target">
+      <div>
         <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
         <ul class="space-y-2 text-gray-400">
                 <li>
@@ -61,13 +61,13 @@ const scrollTo = (id) => {
       </div>
 
       <!-- SOCIAL -->
-      <div class="cursor-target">
+      <div>
         <h3 class="text-lg font-semibold mb-4">Sosial Media</h3>
         <div class="flex gap-4">
           <a
             href="https://github.com/bayu841"
             target="_blank"
-            class="w-10 h-10 flex items-center justify-center rounded-full -800 hover:bg-black transition"
+            class="w-10 h-10 flex items-center justify-center rounded-full -800 hover:bg-black transition cursor-target"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ const scrollTo = (id) => {
           <a
             href="https://www.instagram.com/ardiansya_byu/"
             target="_blank"
-            class="w-10 h-10 flex items-center justify-center rounded-full -800 hover:bg-pink-600 transition"
+            class="w-10 h-10 flex items-center justify-center rounded-full -800 hover:bg-pink-600 transition cursor-target"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ const scrollTo = (id) => {
           <a
             href="https://www.linkedin.com/in/bayu-ardiansyah-95501b3a7/"
             target="_blank"
-            class="w-10 h-10 flex items-center justify-center rounded-full -800 hover:bg-blue-600 transition"
+            class="w-10 h-10 flex items-center justify-center rounded-full -800 hover:bg-blue-600 transition cursor-target"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

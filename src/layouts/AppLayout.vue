@@ -8,7 +8,7 @@ import TargetCursor from "../components/common/TargetCursor.vue";
 const isDesktop = ref(false);
 
 const checkScreen = () => {
-  isDesktop.value = window.innerWidth >= 1024; 
+  isDesktop.value = window.innerWidth >= 1024;
 };
 
 onMounted(() => {
@@ -40,7 +40,7 @@ const playPause = async () => {
     if (isPlaying.value) {
       audio.value.pause();
     } else {
-      audio.value.load(); 
+      audio.value.load();
       await audio.value.play();
     }
     isPlaying.value = !isPlaying.value;
@@ -55,8 +55,7 @@ const nextSong = () => {
 };
 
 const prevSong = () => {
-  currentIndex.value =
-    (currentIndex.value - 1 + songs.length) % songs.length;
+  currentIndex.value = (currentIndex.value - 1 + songs.length) % songs.length;
   playAfterChange();
 };
 
@@ -66,7 +65,7 @@ const playAfterChange = () => {
   setTimeout(async () => {
     if (audio.value) {
       try {
-        audio.value.load(); 
+        audio.value.load();
         await audio.value.play();
         isPlaying.value = true;
       } catch (err) {
@@ -77,74 +76,74 @@ const playAfterChange = () => {
 };
 onMounted(() => {
   if (audio.value) {
-    audio.value.volume = 1; 
+    audio.value.volume = 1;
   }
 });
 </script>
 
 <template>
- <div class="relative min-h-screen bg-gray-950 text-white overflow-x-hidden">
+  <div class="relative min-h-screen bg-gray-950 text-white overflow-x-hidden">
+    <!-- GLOBAL GLOW -->
+    <div class="fixed inset-0 z-0 pointer-events-none">
+      <div
+        class="absolute w-[600px] h-[600px] bg-blue-500/25 blur-[120px] rounded-full top-[-150px] left-[-150px]"
+      ></div>
+      <div
+        class="absolute w-[500px] h-[500px] bg-purple-500/25 blur-[120px] rounded-full bottom-[-150px] right-[-150px]"
+      ></div>
+    </div>
 
-  <!-- GLOBAL GLOW -->
-  <div class="fixed inset-0 z-0 pointer-events-none">
-    <div class="absolute w-[600px] h-[600px] bg-blue-500/25 blur-[120px] rounded-full top-[-150px] left-[-150px]"></div>
-    <div class="absolute w-[500px] h-[500px] bg-purple-500/25 blur-[120px] rounded-full bottom-[-150px] right-[-150px]"></div>
-  </div>
+    <Navbar />
 
-  <!-- CONTENT -->
-  <Navbar />
-
-  <!-- hanya bungkus area tertentu -->
-   <TargetCursor
-        v-if="isDesktop"
-        :spin-duration="2"
-        :hide-default-cursor="true"
+    <TargetCursor
+      v-if="isDesktop"
+      :spin-duration="2"
+      :hide-default-cursor="true"
     />
     <router-view />
 
-  <Footer />
-      <button
-        @click="togglePlayer"
-        class="fixed left-9 top-1/2 -translate-y-1/2 z-50
-              w-12 h-12 rounded-full
-              bg-blue-500 text-white shadow-lg
-              flex items-center justify-center
-              hover:scale-110 transition"
+    <Footer />
+    <button
+      @click="togglePlayer"
+      :class="[
+        'fixed z-50 w-12 h-12 rounded-full cursor-target bg-blue-500 text-white shadow-lg flex items-center justify-center hover:scale-110 transition',
+        isDesktop ? 'left-9 top-1/2 -translate-y-1/2' : 'right-6 bottom-14',
+      ]"
+    >
+      <i class="pi pi-headphones text-white text-xl"></i>
+    </button>
+
+    <Transition name="fade">
+      <div
+        v-if="isOpen"
+        :class="[
+          'fixed z-50 w-64 bg-gray-900/90 backdrop-blur p-4 rounded-xl shadow-xl border border-white/10 cursor-target',
+          isDesktop ? 'left-6 top-1/2 -translate-y-1/2' : 'right-6 bottom-24',
+        ]"
       >
-          <i class="pi pi-headphones text-white text-xl"></i>
-      </button>
+        <!-- Title -->
+        <p class="text-white text-sm mb-2">
+          {{ songs[currentIndex].title }}
+        </p>
 
-      <!-- 🎧 POPUP PLAYER -->
-      <Transition name="fade">
-        <div
-          v-if="isOpen"
-          class="fixed left-9 top-1/2 -translate-y-1/2 z-50
-                w-64 bg-gray-900/90 backdrop-blur
-                p-4 rounded-xl shadow-xl border border-white/10"
-        >
-          <!-- Title -->
-          <p class="text-white text-sm mb-2">
-            {{ songs[currentIndex].title }}
-          </p>
+        <!-- Audio -->
 
-          <!-- Audio -->
-          
-          <!-- Controls -->
-          <div class="flex justify-between items-center text-white mt-3">
-            <button @click="prevSong">⏮</button>
+        <!-- Controls -->
+        <div class="flex justify-between items-center text-white mt-3">
+          <button @click="prevSong">⏮</button>
 
-            <button @click="playPause" class="text-lg">
-              {{ isPlaying ? "⏸" : "▶️" }}
-            </button>
+          <button @click="playPause" class="text-lg">
+            {{ isPlaying ? "⏸" : "▶️" }}
+          </button>
 
-            <button @click="nextSong">⏭</button>
-          </div>
+          <button @click="nextSong">⏭</button>
+        </div>
 
-          <!-- Close -->
-          <button
+        <!-- Close -->
+        <button
           @click="togglePlayer"
           class="absolute top-2 right-2 text-gray-400 hover:text-white"
-          >
+        >
           ✖
         </button>
       </div>
@@ -154,7 +153,7 @@ onMounted(() => {
       :key="currentIndex"
       :src="songs[currentIndex].src"
     ></audio>
-</div>
+  </div>
 </template>
 
 <style scoped>

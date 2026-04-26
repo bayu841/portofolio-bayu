@@ -73,7 +73,7 @@ const scrollToContact = () => {
           </span>
         </h1>
 
-        <p class="text-gray-400 mb-6 max-w-lg cursor-target">
+        <p class="text-gray-400 mb-6 max-w-lg cursor-target text-sm md:text-normal">
            Seorang yang memiliki minat di bidang pengembangan website, dengan fokus pada pembuatan 
            tampilan yang modern, interaktif, dan responsif 
         </p>
