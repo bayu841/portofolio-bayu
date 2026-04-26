@@ -33,9 +33,8 @@ onMounted(() => {
     observer.observe(sectionRef.value);
   }
 });
-const scrollToContact = () => {
-  const el = document.getElementById("contact");
-  if (el) el.scrollIntoView({ behavior: "smooth" });
+const handleContactClick = () => {
+  console.log("Contact clicked");
 };
 </script>
 
@@ -97,7 +96,7 @@ const scrollToContact = () => {
           <span
             class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-xs md:text-sm"
           >
-            <1 Tahun Pengalaman
+            &lt;1 Tahun Pengalaman
           </span>
           <span
             class="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-xs md:text-sm"
@@ -118,10 +117,8 @@ const scrollToContact = () => {
 
         <!-- BUTTON -->
         <button
-          @click="scrollToContact"
-          class="button-gradient px-5 md:px-6 py-2.5 md:py-3 rounded-lg text-sm md:text-base font-semibold transition"
-        >
-          Hubungi Saya
+          class="button-gradient px-5 md:px-6 py-2.5 md:py-3 rounded-lg text-sm md:text-base font-semibold transition">
+          Download CV
         </button>
       </div>
     </div>
