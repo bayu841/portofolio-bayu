@@ -63,7 +63,7 @@ const scrollToContact = () => {
     id="hero"
   >
     <!-- Content -->
-    <div class="max-w-7xl w-full grid md:grid-cols-2 gap-12 items-center z-10">
+    <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center z-10">
       <!-- LEFT TEXT -->
       <div class="ml-0 md:ml-10">
         <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 cursor-target">
