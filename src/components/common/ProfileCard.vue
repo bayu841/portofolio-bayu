@@ -744,11 +744,31 @@ onUnmounted(() => {
 }
 
 @media (max-width: 768px) {
+  .pc-shine,
+  .pc-glare,
+  .pc-avatar-content {
+    mix-blend-mode: normal !important;
+  }
+
+  .pc-avatar-content::before {
+    backdrop-filter: none !important;
+  
+  }
   .pc-card {
     height: 70svh;
     max-height: 450px;
   }
+   .pc-shine {
+    opacity: 0.3;
+  }
 
+  .pc-glare {
+    opacity: 0.2;
+  }
+  .pc-shine,
+  .pc-glare {
+    will-change: opacity, transform;
+  }
   .pc-details {
     top: 2em;
   }
