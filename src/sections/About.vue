@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import ProfileCard from "../components/common/ProfileCard.vue";
+import profile from "../assets/images/profile.webp";
+import pattern from "../assets/images/iconpattern.webp";
+import grain from "../assets/images/grain.webp";
 
 const handleContactClick = () => {
   console.log("Contact button clicked!");
@@ -58,9 +61,9 @@ onMounted(() => {
           handle="bayu_a"
           status="Online"
           contact-text="Hubungi Saya"
-          avatar-url="images/profile.webp"
-          icon-url="images/iconpattern.webp"
-          grain-url="images/grain.webp"
+          :avatar-url="profile"
+          :icon-url="pattern"
+          :grain-url="grain"
           :show-user-info="true"
           :show-behind-gradient="true"
           :enable-tilt="!isMobile"
