@@ -41,7 +41,7 @@ const sendMessage = () => {
     id="contact"
     ref="sectionRef"
     :class="[
-      'py-16 md:py-24 px-4 sm:px-6 text-gray-900 dark:text-white transition-all duration-700 transform',
+      'py-16 md:py-20 px-4 sm:px-6 text-gray-900 dark:text-white transition-all duration-700 transform',
       isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10',
     ]"
   >
