@@ -1,7 +1,24 @@
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
 import Navbar from "../components/common/Navbar.vue";
 import Footer from "../components/common/Footer.vue";
-import ClickSpark from "../components/common/ClickSpark.vue";
+import TargetCursor from "../components/common/TargetCursor.vue";
+
+const isDesktop = ref(false);
+
+const checkScreen = () => {
+  isDesktop.value = window.innerWidth >= 1024; 
+};
+
+onMounted(() => {
+  checkScreen();
+  window.addEventListener("resize", checkScreen);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", checkScreen);
+});
 </script>
 
 <template>
@@ -17,18 +34,12 @@ import ClickSpark from "../components/common/ClickSpark.vue";
   <Navbar />
 
   <!-- hanya bungkus area tertentu -->
-  <ClickSpark
-    spark-color="white"
-    :spark-size="12"
-    :spark-radius="25"
-    :spark-count="12"
-    :duration="600"
-    easing="ease-out"
-    :extra-scale="1.2"
-    class="relative z-10"
-  >
+   <TargetCursor
+        v-if="isDesktop"
+        :spin-duration="2"
+        :hide-default-cursor="true"
+    />
     <router-view />
-  </ClickSpark>
 
   <Footer />
 

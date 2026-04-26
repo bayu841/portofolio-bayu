@@ -10,7 +10,7 @@ const scrollTo = (id) => {
   <footer class="pt-16 pb-8 px-6 border-t border-white/10">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
       <!-- LOGO / ABOUT -->
-      <div>
+      <div class="cursor-target">
         <h2 class="text-2xl font-bold text-gradient">@Bayu_A</h2>
         <p class="text-gray-400 mt-3 text-sm">
            Memiliki minat dalam pengembangan website dengan 
@@ -19,7 +19,7 @@ const scrollTo = (id) => {
       </div>
 
       <!-- NAVIGATION -->
-      <div>
+      <div class="cursor-target">
         <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
         <ul class="space-y-2 text-gray-400">
                 <li>
@@ -41,6 +41,18 @@ const scrollTo = (id) => {
           </li>
 
           <li>
+            <button @click="scrollTo('workflow')" class="hover:text-blue-400 transition">
+              Alur Kerja
+            </button>
+          </li>
+
+          <li>
+            <button @click="scrollTo('experience')" class="hover:text-blue-400 transition">
+              Pengalaman
+            </button>
+          </li>
+
+          <li>
             <button @click="scrollTo('contact')" class="hover:text-blue-400 transition">
               Kontak
             </button>
@@ -49,7 +61,7 @@ const scrollTo = (id) => {
       </div>
 
       <!-- SOCIAL -->
-      <div>
+      <div class="cursor-target">
         <h3 class="text-lg font-semibold mb-4">Sosial Media</h3>
         <div class="flex gap-4">
           <a

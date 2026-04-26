@@ -42,7 +42,7 @@ const handleContactClick = () => {
   <section
     ref="sectionRef"
     id="about"
-    class="text-white py-14 md:py-20 px-6 font-poppins transition-all duration-700 will-change-transform"
+    class="text-white py-22 md:py-28 px-6 font-poppins transition-all duration-700 will-change-transform"
     :class="
       isVisible
         ? 'opacity-100 translate-y-0'
@@ -68,27 +68,29 @@ const handleContactClick = () => {
           :show-behind-gradient="true"
           :enable-tilt="!isMobile"
           @contact-click="handleContactClick"
+          class="cursor-target"
         />
       </div>
 
       <!-- RIGHT: TEXT -->
       <div class="text-left md:text-left">
-        <h2 class="text-xl md:text-2xl font-semibold mb-4">Siapa Saya?</h2>
+        <h2 class="text-xl md:text-2xl font-semibold mb-4 ">Siapa Saya?</h2>
 
-        <p class="text-gray-400 mb-4 leading-relaxed text-sm md:text-base">
+        <div class="cursor-target">
+        <p class="text-gray-400 mb-4 leading-relaxed text-sm md:text-normal">
           Saya memiliki ketertarikan di bidang teknologi, khususnya dalam 
           pembuatan website yang modern dan mudah digunakan. 
           Saya senang mempelajari bagaimana sebuah tampilan web bisa dibuat menarik, 
           interaktif, dan nyaman dilihat oleh pengguna.
         </p>
 
-        <p class="text-gray-400 mb-6 leading-relaxed text-sm md:text-base ">
+        <p class="text-gray-400 mb-6 leading-relaxed text-sm md:text-normal">
            Saat ini saya sedang mengembangkan kemampuan di bidang pengembangan 
            website (frontend development) dan terus mencoba membuat berbagai 
            proyek sederhana untuk menambah pengalaman serta memahami 
            cara kerja dunia industri digital.
         </p>
-
+</div>
         <!-- Skills -->
         <div
           class="flex flex-wrap justify-start md:justify-start gap-2 md:gap-3 mb-6"
@@ -117,7 +119,7 @@ const handleContactClick = () => {
 
         <!-- BUTTON -->
         <button
-          class="button-gradient px-5 md:px-6 py-2.5 md:py-3 rounded-lg text-sm md:text-base font-semibold transition">
+          class="button-gradient px-5 md:px-6 py-2.5 md:py-3 rounded-lg text-sm md:text-base font-semibold transition cursor-target">
           Download CV
         </button>
       </div>

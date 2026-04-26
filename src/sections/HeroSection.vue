@@ -59,21 +59,21 @@ const scrollToContact = () => {
 </script>
 <template>
   <section
-    class="min-h-screen flex items-center justify-center px-6 font-poppins overflow-hidden"
+    class="min-h-screen flex items-center justify-center px-6 font-poppins overflow-hidden mt-4"
     id="hero"
   >
     <!-- Content -->
     <div class="max-w-7xl w-full grid md:grid-cols-2 gap-12 items-center z-10">
       <!-- LEFT TEXT -->
       <div class="ml-0 md:ml-10">
-        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 cursor-target">
           Hi, I'm <br />
           <span class="text-gradient animate-pulse">
             {{ typedText }}
           </span>
         </h1>
 
-        <p class="text-gray-400 mb-6 max-w-lg">
+        <p class="text-gray-400 mb-6 max-w-lg cursor-target">
            Seorang yang memiliki minat di bidang pengembangan website, dengan fokus pada pembuatan 
            tampilan yang modern, interaktif, dan responsif 
         </p>
@@ -82,14 +82,14 @@ const scrollToContact = () => {
         <div class="flex gap-4">
           <button
             @click="scrollToAbout"
-            class="button-gradient px-6 py-3 rounded-lg font-semibold transition"
+            class="button-gradient px-6 py-3 rounded-lg font-semibold transition cursor-target"
           >
             Tentang Saya
           </button>
 
           <button
              @click="scrollToContact"
-            class="border border-gray-600 hover:border-white px-6 py-3 rounded-lg transition"
+            class="border border-gray-600 hover:border-white px-6 py-3 rounded-lg transition cursor-target"
           >
             Kontak
           </button>
@@ -116,7 +116,7 @@ const scrollToContact = () => {
             :show-mobile-warning="false"
             :show-tooltip="true"
             :display-overlay-content="true"
-            class="relative z-10"
+            class="relative z-10 cursor-target"
           >
             <template #overlay>
               <div class="absolute bottom-4 left-4 text-white">

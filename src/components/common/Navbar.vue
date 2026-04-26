@@ -18,13 +18,18 @@ const scrollTo = (id) => {
 
 <template>
   <nav
-    class="fixed w-full z-50 text-white font-poppins bg-gray-900/40 backdrop-blur-md border-b border-white/10"
-  >
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
+  class="fixed top-2 left-1/2 -translate-x-1/2 z-50
+         w-[92%] max-w-6xl
+         text-white font-poppins
+         bg-gray-900/60 backdrop-blur-md
+         border border-white/10
+         rounded-[24px] md:rounded-[200px] shadow-lg text-sm"
+>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+      <div class="flex justify-between items-center h-14 cursor-target">
         <!-- Logo -->
         <div class="flex items-center">
-          <span class="text-xl font-bold w-0">@Bayu_A</span>
+          <span class="text-[16px] font-bold w-0">@Bayu_A</span>
         </div>
 
         <!-- Desktop Menu -->
@@ -48,6 +53,20 @@ const scrollTo = (id) => {
             class="relative hover:text-blue-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full"
           >
             Projek
+          </button>
+
+          <button
+            @click="scrollTo('workflow')"
+            class="relative hover:text-blue-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full"
+          >
+            Alur Kerja
+          </button>
+
+          <button
+            @click="scrollTo('experience')"
+            class="relative hover:text-blue-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full"
+          >
+            Pengalaman
           </button>
 
           <button
@@ -101,10 +120,15 @@ const scrollTo = (id) => {
         </button>
         <button
           @click="scrollTo('projects')"
-          class="block py-2 w-full text-left"
-        >
+          class="block py-2 w-full text-left">
           Projek
         </button>
+        <button
+          @click="scrollTo('workflow')"
+          class="block py-2 w-full text-left">
+          Alur Kerja
+        </button>
+       
         <button
           @click="scrollTo('contact')"
           class="block py-2 w-full text-left"

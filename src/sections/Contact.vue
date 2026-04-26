@@ -41,14 +41,14 @@ const sendMessage = () => {
     id="contact"
     ref="sectionRef"
     :class="[
-      'py-16 md:py-20 px-4 sm:px-6 text-gray-900 dark:text-white transition-all duration-700 transform',
+      'py-32 sm:py-20 md:py-20 px-4 sm:px-6 text-gray-900 dark:text-white transition-all duration-700 transform',
       isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10',
     ]"
   >
     <!-- TITLE -->
     <div class="text-center mb-12">
       <h2 class="text-4xl font-bold text-gradient">Kontak Saya</h2>
-      <p class="text-gray-400 mt-2">
+      <p class="text-gray-400 mt-2 text-base lg:text-sm">
         Terbuka untuk kerja sama dan diskusi project. 
          Mari wujudkan ide kamu bersama.
       </p>
@@ -134,26 +134,26 @@ const sendMessage = () => {
             v-model="name"
             type="text"
             placeholder="Nama"
-            class="w-full px-4 py-3 text-sm sm:text-base rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500"
+            class="w-full px-4 py-3 text-sm sm:text-base rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500 cursor-target"
           />
 
           <input
             v-model="email"
             type="email"
             placeholder="Email"
-            class="w-full px-4 py-3 text-sm sm:text-base rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500"
+            class="w-full px-4 py-3 text-sm sm:text-base rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500 cursor-target" 
           />
 
           <textarea
             v-model="message"
             rows="4"
             placeholder="Pesan"
-            class="w-full px-4 py-3 text-sm sm:text-base rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500"
+            class="w-full px-4 py-3 text-sm sm:text-base rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500 cursor-target"
           ></textarea>
 
           <button
             @click="sendMessage"
-            class="w-full py-3 rounded-lg button-gradient font-semibold text-sm sm:text-base"
+            class="w-full py-3 rounded-lg button-gradient font-semibold text-sm sm:text-base cursor-target"
           >
             Kirim Pesan
           </button>

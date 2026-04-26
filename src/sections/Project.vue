@@ -68,22 +68,22 @@ onMounted(() => {
     ref="sectionRef"
     id="projects"
     :class="[
-      'text-white py-20 px-6 transition-all duration-700',
+      'text-white py-32 sm:py-20 md:py-20 px-6 transition-all duration-700 mb-20',
       isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10',
     ]"
   >
     <!-- TITLE -->
     <div class="text-center mb-10">
       <h1 class="text-4xl font-bold mb-2 text-gradient">Portfolio & Karya</h1>
-      <p class="text-gray-400 max-w-xl mx-auto">
+      <p class="text-gray-400 max-w-xl mx-auto text-base lg:text-sm">
         Jelajahi proyek, sertifikat, dan keterampilan teknis saya.
       </p>
     </div>
 
     <!-- TAB MENU -->
-    <div class="flex justify-center mb-10  px-4 sm:px-0">
+    <div class="flex justify-center mb-10 px-4 sm:px-0">
       <div
-        class="bg-gray-900/60 p-2 rounded-xl flex gap-1 sm:gap-1 backdrop-blur"
+        class="bg-gray-900/60 p-2 rounded-xl flex gap-1 sm:gap-1 backdrop-blur cursor-target"
       >
         <button
           @click="activeTab = 'projects'"
@@ -123,9 +123,9 @@ onMounted(() => {
             <GlareHover
               v-for="(project, i) in projects"
               :key="i"
-              class="w-full"
+              class="w-full cursor-target"
               width="100%"
-              height="255px"
+              height="245px"
               background="rgba(17, 24, 39, 0.5)"
               border-color="#111827"
               border-radius="12px"
@@ -136,19 +136,19 @@ onMounted(() => {
               :play-once="false"
             >
               <!-- ISI ORIGINAL STYLE KAMU DIPERTAHANKAN -->
-              <div class="rounded-xl p-3 shadow-lg h-full flex flex-col">
+              <div class="rounded-xl p-2 shadow-lg h-full flex flex-col">
                 <img
                   :src="project.image"
                   class="rounded-lg mb-4 w-full h-40 object-cover"
                 />
 
-                <h3 class="font-normal text-base sm:text-lg pl-2 mb-1">
-                  {{ project.title }}
-                </h3>
+              <h3 class="font-normal text-normal sm:text-sm pl-2 mb-1">
+                {{ project.title }}
+              </h3>
 
-                <p class="text-gray-400 text-sm pl-2">
-                  {{ project.desc }}
-                </p>
+              <p class="text-gray-400 text-xs sm:text-sm pl-2">
+                {{ project.desc }}
+              </p>
               </div>
             </GlareHover>
           </div>
@@ -160,7 +160,7 @@ onMounted(() => {
             <div
               v-for="(cert, i) in certificates"
               :key="i"
-              class="bg-gray-900/50 rounded-xl p-2 shadow-lg"
+              class="bg-gray-900/50 rounded-xl p-1 shadow-lg cursor-target"
             >
               <img :src="cert.image" class="rounded-lg" />
             </div>
@@ -179,6 +179,7 @@ onMounted(() => {
               glare-color="#ffffff"
               :glare-opacity="0.2"
               :glare-size="200"
+              class="cursor-target"
             >
               <div
                 class="flex flex-col items-center justify-center h-full text-white"

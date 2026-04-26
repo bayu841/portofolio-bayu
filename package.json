@@ -10,7 +10,9 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gsap": "^3.15.0",
     "motion-v": "^2.2.1",
+    "primeicons": "^7.0.0",
     "vue": "^3.5.32",
     "vue-router": "^5.0.6"
   },
