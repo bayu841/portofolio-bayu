@@ -33,16 +33,20 @@ const isPlaying = ref(false);
 const togglePlayer = () => {
   isOpen.value = !isOpen.value;
 };
-
-const playPause = () => {
+const playPause = async () => {
   if (!audio.value) return;
 
-  if (isPlaying.value) {
-    audio.value.pause();
-  } else {
-    audio.value.play();
+  try {
+    if (isPlaying.value) {
+      audio.value.pause();
+    } else {
+      audio.value.load(); 
+      await audio.value.play();
+    }
+    isPlaying.value = !isPlaying.value;
+  } catch (err) {
+    console.log("Audio error:", err);
   }
-  isPlaying.value = !isPlaying.value;
 };
 
 const nextSong = () => {
