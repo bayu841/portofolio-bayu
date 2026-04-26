@@ -6,28 +6,24 @@ const handleContactClick = () => {
   console.log("Contact button clicked!");
 };
 
-// DETECT MOBILE
 const isMobile = ref(false);
 
-// ANIMATION
 const sectionRef = ref<HTMLElement | null>(null);
 const isVisible = ref(false);
 
 onMounted(() => {
   isMobile.value = window.innerWidth < 768;
 
-  // 👉 kalau mobile, langsung tampil tanpa animasi (biar smooth)
   if (isMobile.value) {
     isVisible.value = true;
     return;
   }
 
-  // 👉 desktop pakai observer
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
         isVisible.value = true;
-        observer.disconnect(); // stop setelah muncul
+        observer.disconnect(); 
       }
     },
     { threshold: 0.1 }
@@ -44,14 +40,16 @@ onMounted(() => {
     ref="sectionRef"
     id="about"
     class="text-white py-14 md:py-20 px-6 font-poppins transition-all duration-700 will-change-transform"
-    :class="isVisible
-      ? 'opacity-100 translate-y-0'
-      : 'opacity-0 translate-y-5 md:translate-y-10'"
+    :class="
+      isVisible
+        ? 'opacity-100 translate-y-0'
+        : 'opacity-0 translate-y-5 md:translate-y-10'
+    "
   >
-
     <!-- Content -->
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-12 items-center">
-
+    <div
+      class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-12 items-center"
+    >
       <!-- LEFT: CARD -->
       <div class="flex justify-center">
         <ProfileCard
@@ -72,34 +70,43 @@ onMounted(() => {
 
       <!-- RIGHT: TEXT -->
       <div class="text-left md:text-left">
-        <h2 class="text-xl md:text-2xl font-semibold mb-4">
-          Siapa Saya?
-        </h2>
+        <h2 class="text-xl md:text-2xl font-semibold mb-4">Siapa Saya?</h2>
 
         <p class="text-gray-400 mb-4 leading-relaxed text-sm md:text-base">
           Saya adalah seorang developer yang memiliki minat besar dalam
           pengembangan website modern, khususnya menggunakan Vue.js dan Laravel.
-          Saya suka membangun tampilan yang interaktif, responsif, dan nyaman digunakan.
+          Saya suka membangun tampilan yang interaktif, responsif, dan nyaman
+          digunakan.
         </p>
 
         <p class="text-gray-400 mb-6 leading-relaxed text-sm md:text-base">
           Saat ini saya fokus mengembangkan skill di bidang frontend development
-          serta membangun berbagai project portfolio untuk meningkatkan pengalaman
-          dan kesiapan di dunia industri.
+          serta membangun berbagai project portfolio untuk meningkatkan
+          pengalaman dan kesiapan di dunia industri.
         </p>
 
         <!-- Skills -->
-        <div class="flex flex-wrap justify-start md:justify-start gap-2 md:gap-3 mb-6">
-          <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-xs md:text-sm">
+        <div
+          class="flex flex-wrap justify-start md:justify-start gap-2 md:gap-3 mb-6"
+        >
+          <span
+            class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-xs md:text-sm"
+          >
             1+ Experience
           </span>
-          <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-xs md:text-sm">
+          <span
+            class="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-xs md:text-sm"
+          >
             Desain
           </span>
-          <span class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs md:text-sm">
+          <span
+            class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs md:text-sm"
+          >
             Coding
           </span>
-          <span class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full text-xs md:text-sm">
+          <span
+            class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full text-xs md:text-sm"
+          >
             Student
           </span>
         </div>
@@ -112,8 +119,6 @@ onMounted(() => {
           Hubungi Saya
         </button>
       </div>
-
     </div>
-
   </section>
 </template>
