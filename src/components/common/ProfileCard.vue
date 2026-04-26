@@ -310,7 +310,8 @@
     perspective: 500px;
     transform: translate3d(0, 0, 0.1px);
     position: relative;
-    touch-action: none;
+    touch-action: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .pc-card-wrapper::before {
