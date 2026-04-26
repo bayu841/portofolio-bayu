@@ -83,7 +83,7 @@ onMounted(() => {
     <!-- TAB MENU -->
     <div class="flex justify-center mb-10 px-4 sm:px-0">
       <div
-        class="bg-gray-900/60 p-2 rounded-xl flex gap-1 sm:gap-2 backdrop-blur"
+        class="bg-gray-900/60 p-2 rounded-xl flex gap-1 sm:gap-1 backdrop-blur"
       >
         <button
           @click="activeTab = 'projects'"

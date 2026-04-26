@@ -51,6 +51,11 @@ const scrollToAbout = () => {
   const el = document.getElementById("about");
   if (el) el.scrollIntoView({ behavior: "smooth" });
 };
+
+const scrollToContact = () => {
+  const el = document.getElementById("contact");
+  if (el) el.scrollIntoView({ behavior: "smooth" });
+};
 </script>
 <template>
   <section
@@ -82,12 +87,12 @@ const scrollToAbout = () => {
             About Me
           </button>
 
-          <a
-            href="#contact"
+          <button
+             @click="scrollToContact"
             class="border border-gray-600 hover:border-white px-6 py-3 rounded-lg transition"
           >
             Contact
-          </a>
+          </button>
         </div>
       </div>
 
