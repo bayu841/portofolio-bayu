@@ -76,16 +76,17 @@ onMounted(() => {
         <h2 class="text-xl md:text-2xl font-semibold mb-4">Siapa Saya?</h2>
 
         <p class="text-gray-400 mb-4 leading-relaxed text-sm md:text-base">
-          Saya adalah seorang developer yang memiliki minat besar dalam
-          pengembangan website modern, khususnya menggunakan Vue.js dan Laravel.
-          Saya suka membangun tampilan yang interaktif, responsif, dan nyaman
-          digunakan.
+          Saya memiliki ketertarikan di bidang teknologi, khususnya dalam 
+          pembuatan website yang modern dan mudah digunakan. 
+          Saya senang mempelajari bagaimana sebuah tampilan web bisa dibuat menarik, 
+          interaktif, dan nyaman dilihat oleh pengguna.
         </p>
 
-        <p class="text-gray-400 mb-6 leading-relaxed text-sm md:text-base">
-          Saat ini saya fokus mengembangkan skill di bidang frontend development
-          serta membangun berbagai project portfolio untuk meningkatkan
-          pengalaman dan kesiapan di dunia industri.
+        <p class="text-gray-400 mb-6 leading-relaxed text-sm md:text-base ">
+           Saat ini saya sedang mengembangkan kemampuan di bidang pengembangan 
+           website (frontend development) dan terus mencoba membuat berbagai 
+           proyek sederhana untuk menambah pengalaman serta memahami 
+           cara kerja dunia industri digital.
         </p>
 
         <!-- Skills -->
@@ -95,7 +96,7 @@ onMounted(() => {
           <span
             class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-xs md:text-sm"
           >
-            1+ Experience
+            1+ Pengalaman
           </span>
           <span
             class="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-xs md:text-sm"
@@ -110,7 +111,7 @@ onMounted(() => {
           <span
             class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full text-xs md:text-sm"
           >
-            Student
+            Lulusan SMK
           </span>
         </div>
 

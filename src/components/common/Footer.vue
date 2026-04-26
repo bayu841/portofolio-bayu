@@ -13,36 +13,36 @@ const scrollTo = (id) => {
       <div>
         <h2 class="text-2xl font-bold text-gradient">@Bayu_A</h2>
         <p class="text-gray-400 mt-3 text-sm">
-          Frontend Developer passionate about building modern, responsive, and
-          interactive web applications.
+           Memiliki minat dalam pengembangan website dengan 
+           tampilan yang modern, responsif, dan interaktif.
         </p>
       </div>
 
       <!-- NAVIGATION -->
       <div>
-        <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+        <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
         <ul class="space-y-2 text-gray-400">
                 <li>
             <button @click="scrollTo('hero')" class="hover:text-blue-400 transition">
-              Home
+              Beranda
             </button>
           </li>
 
           <li>
             <button @click="scrollTo('about')" class="hover:text-blue-400 transition">
-              About
+              Tentang
             </button>
           </li>
 
           <li>
             <button @click="scrollTo('projects')" class="hover:text-blue-400 transition">
-              Projects
+              Projek
             </button>
           </li>
 
           <li>
             <button @click="scrollTo('contact')" class="hover:text-blue-400 transition">
-              Contact
+              Kontak
             </button>
           </li>
         </ul>
@@ -50,7 +50,7 @@ const scrollTo = (id) => {
 
       <!-- SOCIAL -->
       <div>
-        <h3 class="text-lg font-semibold mb-4">Follow Me</h3>
+        <h3 class="text-lg font-semibold mb-4">Sosial Media</h3>
         <div class="flex gap-4">
           <a
             href="https://github.com/bayu841"

@@ -74,9 +74,9 @@ onMounted(() => {
   >
     <!-- TITLE -->
     <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold mb-2 text-gradient">Portfolio Showcase</h1>
+      <h1 class="text-4xl font-bold mb-2 text-gradient">Portfolio & Karya</h1>
       <p class="text-gray-400 max-w-xl mx-auto">
-        Explore my projects, certificates, and technical skills.
+        Jelajahi proyek, sertifikat, dan keterampilan teknis saya.
       </p>
     </div>
 
@@ -90,7 +90,7 @@ onMounted(() => {
           :class="tabClass('projects')"
           class="px-3 py-1.5 sm:px-4 sm:py-2"
         >
-          Projects
+          Projek
         </button>
 
         <button
@@ -98,7 +98,7 @@ onMounted(() => {
           :class="tabClass('certificates')"
           class="px-3 py-1.5 sm:px-4 sm:py-2"
         >
-          Certificates
+          Sertifikat
         </button>
 
         <button
@@ -106,7 +106,7 @@ onMounted(() => {
           :class="tabClass('skills')"
           class="px-3 py-1.5 sm:px-4 sm:py-2"
         >
-          Skills
+          Skill
         </button>
       </div>
     </div>

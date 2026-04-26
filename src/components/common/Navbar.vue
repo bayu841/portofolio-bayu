@@ -33,28 +33,28 @@ const scrollTo = (id) => {
             @click="scrollTo('hero')"
             class="relative hover:text-blue-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full"
           >
-            Home
+            Beranda
           </button>
 
           <button
             @click="scrollTo('about')"
             class="relative hover:text-blue-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full"
           >
-            About
+            Tentang
           </button>
 
           <button
             @click="scrollTo('projects')"
             class="relative hover:text-blue-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full"
           >
-            Projects
+            Projek
           </button>
 
           <button
             @click="scrollTo('contact')"
             class="relative hover:text-blue-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full"
           >
-            Contact
+            Kontak
           </button>
         </div>
 

@@ -47,9 +47,10 @@ const sendMessage = () => {
   >
     <!-- TITLE -->
     <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-gradient">Contact Me</h2>
+      <h2 class="text-4xl font-bold text-gradient">Kontak Saya</h2>
       <p class="text-gray-400 mt-2">
-        Let's work together or discuss your project
+        Terbuka untuk kerja sama dan diskusi project. <br>
+         Mari wujudkan ide kamu bersama.
       </p>
     </div>
 
@@ -60,10 +61,9 @@ const sendMessage = () => {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <!-- INFO -->
         <div>
-          <h3 class="text-lg sm:text-xl font-semibold mb-4">Get in Touch</h3>
+          <h3 class="text-lg sm:text-xl font-semibold mb-4">Hubungi Saya</h3>
           <p class="text-gray-400 mb-6">
-            Feel free to contact me for collaboration, freelance work, or just
-            say hello 👋
+             Siap untuk kolaborasi, proyek freelance, atau sekadar berdiskusi 🙌.
           </p>
 
           <div class="space-y-3 text-gray-300">
@@ -105,7 +105,7 @@ const sendMessage = () => {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v6a2 2 0 002 2z"
                 />
               </svg>
-              <p>bayuardiansyah206@gmail.com</p>
+              <p>ardiansyahbayu722@gmail.com</p>
             </div>
 
             <!-- Phone -->
@@ -133,21 +133,21 @@ const sendMessage = () => {
           <input
             v-model="name"
             type="text"
-            placeholder="Your Name"
+            placeholder="Nama"
             class="w-full px-4 py-3 text-sm sm:text-base rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500"
           />
 
           <input
             v-model="email"
             type="email"
-            placeholder="Your Email"
+            placeholder="Email"
             class="w-full px-4 py-3 text-sm sm:text-base rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500"
           />
 
           <textarea
             v-model="message"
             rows="4"
-            placeholder="Your Message"
+            placeholder="Pesan"
             class="w-full px-4 py-3 text-sm sm:text-base rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500"
           ></textarea>
 

@@ -74,8 +74,8 @@ const scrollToContact = () => {
         </h1>
 
         <p class="text-gray-400 mb-6 max-w-lg">
-          Seorang Frontend Developer yang fokus membangun website modern,
-          interaktif, dan responsif menggunakan Vue.js & teknologi terbaru.
+           Seorang yang memiliki minat di bidang pengembangan website, dengan fokus pada pembuatan 
+           tampilan yang modern, interaktif, dan responsif 
         </p>
 
         <!-- BUTTON -->
@@ -84,14 +84,14 @@ const scrollToContact = () => {
             @click="scrollToAbout"
             class="button-gradient px-6 py-3 rounded-lg font-semibold transition"
           >
-            About Me
+            Tentang Saya
           </button>
 
           <button
              @click="scrollToContact"
             class="border border-gray-600 hover:border-white px-6 py-3 rounded-lg transition"
           >
-            Contact
+            Kontak
           </button>
         </div>
       </div>
@@ -106,7 +106,7 @@ const scrollToContact = () => {
           <TiltedCard
             image-src="images/heroimage.webp"
             alt-text="Bayu Profile"
-            caption-text="Progammer Pemula🗿"
+            caption-text="Hi everyone💫"
             container-height="420px"
             container-width="340px"
             image-height="420px"
