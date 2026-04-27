@@ -47,7 +47,7 @@ const sendMessage = () => {
   >
     <!-- TITLE -->
     <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-gradient">Kontak Saya</h2>
+      <h2 class="text-4xl font-bold text-gradient">Hubungi Saya</h2>
       <p class="text-gray-400 mt-2 text-base lg:text-sm">
         Terbuka untuk kerja sama dan diskusi project. 
          Mari wujudkan ide kamu bersama.
