@@ -61,7 +61,7 @@ const sendMessage = () => {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <!-- INFO -->
         <div>
-          <h3 class="text-lg sm:text-xl font-semibold mb-4">Hubungi Saya</h3>
+          <h3 class="text-lg sm:text-xl font-semibold mb-4">Mari Terhubung</h3>
           <p class="text-gray-400 mb-6">
              Siap untuk kolaborasi, proyek freelance, atau sekadar berdiskusi 🙌.
           </p>
