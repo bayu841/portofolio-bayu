@@ -1,7 +1,15 @@
 <script setup>
-import { ref } from "vue";
+import { ref , onMounted } from "vue";
 
 const isOpen = ref(false);
+const showNavbar = ref(false); 
+
+onMounted(() => {
+  setTimeout(() => {
+    showNavbar.value = true;
+  }, 400); 
+});
+
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value;
@@ -17,7 +25,9 @@ const scrollTo = (id) => {
 </script>
 
 <template>
+  <Transition name="nav">
   <nav
+  v-if="showNavbar"
   class="fixed top-2 left-1/2 -translate-x-1/2 z-50
          w-[92%] max-w-6xl
          text-white font-poppins
@@ -138,4 +148,5 @@ const scrollTo = (id) => {
       </div>
     </Transition>
   </nav>
+  </Transition>
 </template>
