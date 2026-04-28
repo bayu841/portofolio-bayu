@@ -45,7 +45,7 @@ onMounted(() => {
         <!-- LINE -->
         <div class="hidden md:block absolute top-1/2 left-0 w-full h-[2px] bg-white/10"></div>
 
-        <div class="grid md:grid-cols-3 gap-10 relative">
+        <div class="grid md:grid-cols-3 gap-10 mb-4 relative">
 
           <!-- STEP 1 -->
           <div class="text-center group">
