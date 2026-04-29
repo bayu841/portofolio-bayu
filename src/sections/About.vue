@@ -6,6 +6,14 @@ import pattern from "../assets/images/iconpattern.webp";
 import grain from "../assets/images/grain.webp";
 
 
+const downloadCV = () => {
+  const link = document.createElement("a");
+  link.href = `${import.meta.env.BASE_URL}cv/cv-bayu.pdf`;
+  link.download = "CV-Bayu.pdf";
+  link.click();
+};
+
+
 const isMobile = ref(false);
 
 const sectionRef = ref<HTMLElement | null>(null);
@@ -119,6 +127,7 @@ const handleContactClick = () => {
 
         <!-- BUTTON -->
         <button
+          @click="downloadCV"
           class="button-gradient px-5 md:px-6 py-2.5 md:py-3 rounded-lg text-sm md:text-base font-semibold transition cursor-target">
           Download CV
         </button>
