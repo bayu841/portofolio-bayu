@@ -16,6 +16,7 @@ const certificates = [
   { image: "images/cert2.webp" },
   { image: "images/cert3.webp" },
   { image: "images/cert4.webp" },
+  { image: "images/cert5.webp" },
 ];
 
 const skills = [
