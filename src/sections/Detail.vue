@@ -40,12 +40,12 @@ const project = computed(() => {
 </script>
 
 <template>
-  <section class="text-white px-6 sm:px-6 py-[170px] sm:py-[120px] z-20">
+  <section class="text-white px-6 sm:px-6 py-[170px] sm:py-[120px]">
     <div v-if="project" :key="route.params.id" class="max-w-4xl mx-auto">
       <!-- IMAGE -->
       <img
         :src="project.image"
-        class="rounded-xl mb-5 sm:mb-6 w-full h-52 sm:h-64 md:h-72 object-cover cursor-target z-20"
+        class="rounded-xl mb-5 sm:mb-6 w-full h-52 sm:h-64 md:h-72 object-cover cursor-target"
       />
 
       <!-- TITLE -->
