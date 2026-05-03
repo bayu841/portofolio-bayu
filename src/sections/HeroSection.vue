@@ -47,8 +47,8 @@ onMounted(() => {
   typeLoop();
 });
 
-const scrollToAbout = () => {
-  const el = document.getElementById("about");
+const scrollToProjects = () => {
+  const el = document.getElementById("projects");
   if (el) el.scrollIntoView({ behavior: "smooth" });
 };
 
@@ -81,10 +81,10 @@ const scrollToContact = () => {
         <!-- BUTTON -->
         <div class="flex gap-4">
           <button
-            @click="scrollToAbout"
+            @click="scrollToProjects"
             class="button-gradient px-6 py-3 rounded-lg font-semibold transition cursor-target"
           >
-            Tentang Saya
+            Lihat Projek
           </button>
 
           <button

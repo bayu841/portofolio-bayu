@@ -1,5 +1,9 @@
 <script setup>
-import { ref , onMounted } from "vue";
+import { ref, onMounted } from "vue";
+import { useRouter, useRoute } from "vue-router";
+
+const router = useRouter();
+const route = useRoute();
 
 const isOpen = ref(false);
 const showNavbar = ref(false); 
@@ -15,12 +19,24 @@ const toggleMenu = () => {
   isOpen.value = !isOpen.value;
 };
 
-const scrollTo = (id) => {
-  const el = document.getElementById(id);
-  if (el) {
-    el.scrollIntoView({ behavior: "smooth" });
-    isOpen.value = false;  
+const scrollTo = async (id) => {
+  if (route.path !== "/") {
+    await router.push("/");
+
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 300);
+  } else {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
   }
+
+  isOpen.value = false;
 };
 </script>
 

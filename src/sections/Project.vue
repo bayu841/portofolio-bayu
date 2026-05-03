@@ -4,11 +4,11 @@ import GlareHover from "../components/common/GlareHover.vue";
 const activeTab = ref("projects");
 
 const projects = [
-  { title: "Zona Coding - Academy (UI)", desc: "Vue.js", image: "images/project/project1.webp" },
-  { title: "Perpustakaan Digital", desc: "Laravel", image: "images/project/project2.webp" },
-  { title: "Manajemen Toko", desc: "Laravel", image: "images/project/project3.webp" },
-  // { title: "E-Commerce Taman (Figma)", desc: "Figma", image: "images/project/project4.webp" },
-  // { title: "SI RATU (Persuratan Terpadu)", desc: "Figma + Vue.js", image: "images/project/project5.webp" },
+  { id:1, title: "Zona Coding - Academy (UI)", desc: "Vue.js", image: "images/project/project1.webp" },
+  { id:2, title: "Perpustakaan Digital", desc: "Laravel", image: "images/project/project2.webp" },
+  { id:3, title: "Manajemen Toko", desc: "Laravel", image: "images/project/project3.webp" },
+  // { id:4, title: "E-Commerce Taman (Figma)", desc: "Figma", image: "images/project/project4.webp" },
+  // { id:5, title: "SI RATU (Persuratan Terpadu)", desc: "Figma + Vue.js", image: "images/project/project5.webp" },
 ];
 
 const certificates = [
@@ -126,7 +126,7 @@ onMounted(() => {
               :key="i"
               class="w-full cursor-target"
               width="100%"
-              height="245px"
+              height="270px"
               background="rgba(17, 24, 39, 0.5)"
               border-color="#111827"
               border-radius="12px"
@@ -150,6 +150,12 @@ onMounted(() => {
               <p class="text-gray-400 text-xs sm:text-sm pl-2">
                 {{ project.desc }}
               </p>
+              <div class="flex justify-end pl-2">
+              <RouterLink :to="`/detail/${project.id}`" 
+              class="text-blue-500 hover:text-blue-300 text-sm font-medium mt-2">
+                Detail ->
+              </RouterLink>
+              </div>
               </div>
             </GlareHover>
           </div>

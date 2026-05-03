@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import DetailView from "../views/DetailView.vue";
 
 const routes = [
   {
@@ -7,11 +8,19 @@ const routes = [
     name: "Home",
     component: HomeView,
   },
+   {
+    path: '/detail/:id',
+    name: 'Detail',
+    component: DetailView
+  }
 ];
 
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
+   scrollBehavior() {
+    return { top: 0 };
+  },
 });
 
 export default router;
