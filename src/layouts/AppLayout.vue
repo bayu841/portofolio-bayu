@@ -100,8 +100,10 @@ onMounted(() => {
       :spin-duration="2"
       :hide-default-cursor="true"
     />
-    <router-view />
-
+    <div class="relative z-10">
+      <router-view />
+    </div>
+    
     <Footer />
     <button
       @click="togglePlayer"

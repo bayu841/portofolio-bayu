@@ -44,7 +44,7 @@ const scrollTo = async (id) => {
   <Transition name="nav">
   <nav
   v-if="showNavbar"
-  class="fixed top-2 left-1/2 -translate-x-1/2 z-50
+  class="fixed top-2 left-1/2 -translate-x-1/2 z-[9999]
          w-[92%] max-w-6xl
          text-white font-poppins
          bg-gray-900/60 backdrop-blur-md
