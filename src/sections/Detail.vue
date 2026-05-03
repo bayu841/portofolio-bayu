@@ -49,11 +49,11 @@ const project = computed(() => {
       />
 
       <!-- TITLE -->
-      <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 p-2">
         {{ project.title }}
       </h1>
 
-      <p class="text-gray-300 text-sm sm:text-sm mb-6 leading-relaxed">
+      <p class="text-gray-300 text-sm sm:text-sm mb-6 leading-relaxed p-2">
         {{ project.detail }}
       </p>
 
@@ -62,7 +62,7 @@ const project = computed(() => {
           <span
             v-for="tool in project.tools"
             :key="tool"
-            class="px-3 py-1 text-xs sm:text-sm bg-gray-800 hover:bg-gray-700 text-white rounded-full border border-white/10 transition"
+            class="px-3 py-1 text-xs sm:text-sm bg-gray-800/40 hover:bg-gray-700/40 text-white rounded-full border border-white/10 transition"
           >
             {{ tool }}
           </span>
@@ -70,7 +70,7 @@ const project = computed(() => {
       </div>
       <button
         @click="router.back()"
-        class="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-white transition cursor-target"
+        class="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-800/40 hover:bg-gray-700/40 text-sm text-white transition cursor-target"
       >
         <span>←</span> Kembali
       </button>
