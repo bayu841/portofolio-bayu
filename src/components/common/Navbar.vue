@@ -82,13 +82,6 @@ const scrollTo = async (id) => {
           </button>
 
           <button
-            @click="scrollTo('workflow')"
-            class="relative hover:text-blue-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full"
-          >
-            Alur Kerja
-          </button>
-
-          <button
             @click="scrollTo('experience')"
             class="relative hover:text-blue-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full"
           >
@@ -148,13 +141,7 @@ const scrollTo = async (id) => {
           @click="scrollTo('projects')"
           class="block py-2 w-full text-left">
           Projek
-        </button>
-        <button
-          @click="scrollTo('workflow')"
-          class="block py-2 w-full text-left">
-          Alur Kerja
-        </button>
-       
+        </button>       
         <button
           @click="scrollTo('contact')"
           class="block py-2 w-full text-left"

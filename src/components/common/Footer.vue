@@ -39,13 +39,6 @@ const scrollTo = (id) => {
               Projek
             </button>
           </li>
-
-          <li>
-            <button @click="scrollTo('workflow')" class="hover:text-blue-400 transition">
-              Alur Kerja
-            </button>
-          </li>
-
           <li>
             <button @click="scrollTo('experience')" class="hover:text-blue-400 transition">
               Pengalaman
