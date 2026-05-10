@@ -355,23 +355,23 @@ watch(
     :style="{ willChange: 'transform' }"
   >
     <div
-      class="top-1/2 left-1/2 absolute bg-white rounded-full w-1 h-1 -translate-x-1/2 -translate-y-1/2 transform"
+      class="top-1/2 left-1/2 absolute bg-gray-300 rounded-full w-1 h-1 -translate-x-1/2 -translate-y-1/2 transform"
       :style="{ willChange: 'transform' }"
     />
     <div
-      class="top-1/2 left-1/2 absolute border-[3px] border-white border-r-0 border-b-0 w-3 h-3 -translate-x-[150%] -translate-y-[150%] target-cursor-corner transform"
+      class="top-1/2 left-1/2 absolute border-[3px] border-gray-300 border-r-0 border-b-0 w-3 h-3 -translate-x-[150%] -translate-y-[150%] target-cursor-corner transform"
       :style="{ willChange: 'transform' }"
     />
     <div
-      class="top-1/2 left-1/2 absolute border-[3px] border-white border-b-0 border-l-0 w-3 h-3 -translate-y-[150%] translate-x-1/2 target-cursor-corner transform"
+      class="top-1/2 left-1/2 absolute border-[3px] border-gray-300 border-b-0 border-l-0 w-3 h-3 -translate-y-[150%] translate-x-1/2 target-cursor-corner transform"
       :style="{ willChange: 'transform' }"
     />
     <div
-      class="top-1/2 left-1/2 absolute border-[3px] border-white border-t-0 border-l-0 w-3 h-3 translate-x-1/2 translate-y-1/2 target-cursor-corner transform"
+      class="top-1/2 left-1/2 absolute border-[3px] border-gray-300 border-t-0 border-l-0 w-3 h-3 translate-x-1/2 translate-y-1/2 target-cursor-corner transform"
       :style="{ willChange: 'transform' }"
     />
     <div
-      class="top-1/2 left-1/2 absolute border-[3px] border-white border-t-0 border-r-0 w-3 h-3 -translate-x-[150%] translate-y-1/2 target-cursor-corner transform"
+      class="top-1/2 left-1/2 absolute border-[3px] border-gray-300 border-t-0 border-r-0 w-3 h-3 -translate-x-[150%] translate-y-1/2 target-cursor-corner transform"
       :style="{ willChange: 'transform' }"
     />
   </div>

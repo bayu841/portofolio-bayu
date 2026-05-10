@@ -7,8 +7,8 @@ const projects = [
   { id:1, title: "Zona Coding - Academy (UI)", desc: "Vue.js", image: "images/project/project1.webp" },
   { id:2, title: "Perpustakaan Digital", desc: "Laravel", image: "images/project/project2.webp" },
   { id:3, title: "Manajemen Toko", desc: "Laravel", image: "images/project/project3.webp" },
-  // { id:4, title: "E-Commerce Taman (Figma)", desc: "Figma", image: "images/project/project4.webp" },
-  // { id:5, title: "SI RATU (Persuratan Terpadu)", desc: "Figma + Vue.js", image: "images/project/project5.webp" },
+  { id:4, title: "E-Commerce Taman (Figma)", desc: "Figma", image: "images/project/project4.webp" },
+  { id:5, title: "SI RATU (Persuratan Terpadu)", desc: "Figma + Vue.js", image: "images/project/project5.webp" },
 ];
 
 const certificates = [
