@@ -17,6 +17,22 @@ onMounted(() => {
 
   if (sectionRef.value) observer.observe(sectionRef.value);
 });
+const isMobile = ref(false);
+
+onMounted(() => {
+  isMobile.value = window.innerWidth < 768;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        isVisible.value = true;
+      }
+    },
+    { threshold: 0.2 }
+  );
+
+  if (sectionRef.value) observer.observe(sectionRef.value);
+});
 </script>
 
 <template>
@@ -75,9 +91,9 @@ onMounted(() => {
             <div class="ml-8 md:ml-0 mt-0 md:mt-6">
               <ElectricBorder
                 color="#3b82f6"
-                :speed="1"
-                :chaos="0.5"
-                :thickness="2"
+                :speed="isMobile ? 0.4 : 1"
+                :chaos="isMobile ? 0.15 : 0.5"
+                :thickness="isMobile ? 1 : 2"
                 class="block w-full"
                 :style="{ borderRadius: '16px' }"
               >
@@ -112,9 +128,9 @@ onMounted(() => {
             <div class="ml-8 md:ml-0 mt-0 md:mt-6">
               <ElectricBorder
                 color="#a855f7"
-                :speed="1"
-                :chaos="0.5"
-                :thickness="2"
+                :speed="isMobile ? 0.4 : 1"
+                :chaos="isMobile ? 0.15 : 0.5"
+                :thickness="isMobile ? 1 : 2"
                 class="block w-full"
                 :style="{ borderRadius: '16px' }"
               >
@@ -149,9 +165,9 @@ onMounted(() => {
             <div class="ml-8 md:ml-0 mt-0 md:mt-6">
               <ElectricBorder
                 color="#22c55e"
-                :speed="1"
-                :chaos="0.5"
-                :thickness="2"
+                :speed="isMobile ? 0.4 : 1"
+                :chaos="isMobile ? 0.15 : 0.5"
+                :thickness="isMobile ? 1 : 2"
                 class="block w-full"
                 :style="{ borderRadius: '16px' }"
               >
