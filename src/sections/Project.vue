@@ -327,21 +327,6 @@ onMounted(() => {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pop-enter-active,
-.pop-leave-active {
-  transition: all 0.3s ease;
-}
-
-.pop-enter-from {
-  opacity: 0;
-  transform: scale(0.95);
-}
-
-.pop-leave-to {
-  opacity: 0;
-  transform: scale(0.95);
-}
-
 .overflow-hidden {
   -webkit-overflow-scrolling: touch;
 }
