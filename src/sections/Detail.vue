@@ -32,14 +32,6 @@ const projects = [
   },
   {
     id: 4,
-    title: "E Commerce Taman",
-   detail:
-      "Website E-Commerce Taman merupakan platform penjualan online yang dirancang untuk memudahkan pengguna dalam membeli berbagai kebutuhan tanaman dan perlengkapan taman secara praktis. Sistem ini memiliki tampilan modern dan responsif, dilengkapi fitur katalog produk, pencarian, detail produk, keranjang belanja, serta pengelolaan transaksi untuk memberikan pengalaman belanja yang nyaman dan terstruktur.",
-    tools: ["Figma"],
-    image: `${import.meta.env.BASE_URL}images/project/project4.webp`,
-  },
-  {
-    id: 5,
     title: "Sistem Persuratan Terpadu",
     detail:
       "Aplikasi ini digunakan untuk membantu proses pengelolaan berbagai persuratan , seperti surat masuk, surat keluar , disposisi dan lainnya. Dengan tampilan baru yang lebih mudah digunakan memungkinkan pengelolaan menjadi lebih mudah, cepat dan efisien.",
