@@ -7,7 +7,7 @@ const scrollTo = (id) => {
 };
 </script>
 <template>
-  <footer class="pt-16 pb-8 px-6 border-t border-white/10">
+  <footer class="pt-16 pb-8 px-6 border-t border-white/10 bg-gray-900/20">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
       <!-- LOGO / ABOUT -->
       <div>

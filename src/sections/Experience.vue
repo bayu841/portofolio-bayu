@@ -44,7 +44,7 @@ onMounted(() => {
     ref="sectionRef"
     id="experience"
     :class="[
-        'text-white py-20 md:py-[100px] px-6 font-poppins transition-all duration-700 bg-gray-900/40 mb-16',
+        'text-white py-20 md:py-[100px] px-6 font-poppins transition-all duration-700 bg-gray-900/40 mb-20',
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
     ]"
     >
