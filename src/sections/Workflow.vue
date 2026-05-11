@@ -53,7 +53,7 @@ onMounted(() => {
         </h1>
 
         <p class="text-gray-400 mx-auto text-base lg:text-sm">
-          Berikut cara saya bekerja untuk menciptakan website yang menarik dan fungsional.
+          Proses saya menciptakan website yang menarik dan fungsional.
         </p>
       </div>
 
