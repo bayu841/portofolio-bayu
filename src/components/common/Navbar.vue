@@ -153,6 +153,12 @@ const scrollTo = async (id) => {
           >
             Alur Kerja
           </button>
+          <button
+            @click="scrollTo('experience')"
+            class="block py-2 w-full text-left"
+          >
+            Pengalaman
+          </button>
 
           <button
             @click="scrollTo('contact')"

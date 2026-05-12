@@ -141,7 +141,7 @@ onMounted(() => {
     ref="sectionRef"
     id="projects"
     :class="[
-      'text-white py-[120px] sm:py-20 md:py-20 px-4 transition-all duration-700 mt-20',
+      'text-white  min-h-screen md:px-16 py-[130px] px-4 transition-all duration-700',
       isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10',
     ]"
   >
