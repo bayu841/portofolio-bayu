@@ -62,7 +62,7 @@ const scrollToContact = () => {
       <!-- LEFT TEXT -->
       <div class="ml-0 md:ml-10">
         <h1
-          class="text-6xl md:text-6xl font-extrabold leading-tight mb-6 cursor-target"
+          class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 cursor-target"
         >
           Hi, I'm <br />
           <span class="text-gradient animate-pulse">
