@@ -62,7 +62,7 @@ const scrollToContact = () => {
       <!-- LEFT TEXT -->
       <div class="ml-0 md:ml-10">
         <h1
-          class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 cursor-target"
+          class="text-6xl md:text-6xl font-extrabold leading-tight mb-6 cursor-target"
         >
           Hi, I'm <br />
           <span class="text-gradient animate-pulse">
@@ -71,7 +71,7 @@ const scrollToContact = () => {
         </h1>
 
         <p
-          class="text-gray-400 mb-6 max-w-lg cursor-target text-[15px] md:text-normal"
+          class="text-gray-400 mb-6 max-w-lg cursor-target text-[14px]"
         >
           Seorang yang memiliki minat di bidang pengembangan website, dengan
           fokus pada pembuatan tampilan yang modern, interaktif, dan responsif
