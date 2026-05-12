@@ -43,7 +43,7 @@ const scrollTo = async (id) => {
   <Transition name="nav">
     <nav
       v-if="showNavbar"
-      class="fixed top-2 left-1/2 -translate-x-1/2 z-[9999] w-[92%] max-w-6xl text-white font-poppins bg-gray-900/60 backdrop-blur-md border border-white/10 rounded-[24px] md:rounded-[200px] shadow-lg text-sm"
+      class="fixed top-2 left-1/2 -translate-x-1/2 z-[9999] w-[92%] max-w-6xl text-white bg-gray-900/60 backdrop-blur-md border border-white/10 rounded-[24px] md:rounded-[200px] shadow-lg text-sm"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-14 cursor-target">

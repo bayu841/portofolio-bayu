@@ -40,7 +40,7 @@ onMounted(() => {
     ref="sectionRef"
     id="workflow"
     :class="[
-      'text-white py-28 md:py-32 px-6 font-poppins bg-gray-900/40 transition-all duration-700 mt-10',
+      'text-white py-28 md:py-32 px-6 bg-gray-900/40 transition-all duration-700 mt-10',
       isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
     ]"
   >
