@@ -71,7 +71,7 @@ const scrollToContact = () => {
         </h1>
 
         <p
-          class="text-gray-400 mb-6 max-w-lg cursor-target text-[14px]"
+          class="text-gray-400 mb-6 max-w-lg cursor-target text-[14px] md:text-[15px]"
         >
           Seorang yang memiliki minat di bidang pengembangan website, dengan
           fokus pada pembuatan tampilan yang modern, interaktif, dan responsif
