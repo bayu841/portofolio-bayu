@@ -50,7 +50,7 @@ const handleContactClick = () => {
   <section
     ref="sectionRef"
     id="about"
-    class="text-white px-6 md:px-16 py-[120px] font-poppins transition-all duration-700 will-change-transform"
+    class="text-white px-6 md:px-16 py-[85px] font-poppins transition-all duration-700 will-change-transform"
     :class="
       isVisible
         ? 'opacity-100 translate-y-0'
